@@ -24,11 +24,11 @@ String fibonacci(int nombre){
   return strPrint ;
 }
 
-String PointFin(int H, int L, int Lg, int D){
+String PointFin(int H, int L, int Lg, int Angle){
   String strPrint = "\n Numéro 2: Point de fin d'une ligne \n";
   double CentreX = H / 2;
   double CentreY = L / 2;
-  double R = D * (math.PI / 180);
+  double Rad = Angle * (math.PI / 180);
   double PointFinX = H / 2 + Lg * math.cos(R);
   double PointFinY = L / 2 + Lg * math.sin(R);
   strPrint += 'Centre : ${CentreX.toStringAsFixed(2)}, ${CentreY.toStringAsFixed(2)}';
