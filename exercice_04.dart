@@ -29,8 +29,8 @@ String PointFin(int H, int L, int Lg, int Angle){
   double CentreX = H / 2;
   double CentreY = L / 2;
   double Rad = Angle * (math.PI / 180);
-  double PointFinX = H / 2 + Lg * math.cos(R);
-  double PointFinY = L / 2 + Lg * math.sin(R);
+  double PointFinX = H / 2 + Lg * math.cos(Rad);
+  double PointFinY = L / 2 + Lg * math.sin(Rad);
   strPrint += 'Centre : ${CentreX.toStringAsFixed(2)}, ${CentreY.toStringAsFixed(2)}';
   strPrint += 'Point de fin de la ligne : ${PointFinX.toStringAsFixed(2)}, ${PointFinY.toStringAsFixed(2)}';
   return strPrint;
